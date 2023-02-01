@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://www.lactame.com/lib/image-js/0.21.2/image.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9a5aab1a-6b3b-4915-a622-294cb6d5790e&lang=ru_RU" type="text/javascript">
+    </script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      Тест 2. Позиционирование по фото
+      <input type="file" id="fileInput" />
+      <button id="sendButton">Отправить</button>
+      <button id="trackingButton">Трекинг</button>
+      <div class="video-options">
+        <select name="" id="" class="custom-select">
+          <option value="">Select camera</option>
+        </select>
+      </div>
+      
+      <button id="cameraButton">Камера</button>
+      <textarea name="" id="logData" cols="30" rows="10"></textarea>
+      <video id="video" width="220px" >Video stream not available.</video>
+      <div id="map" style="width: 300px; height: 300px"></div>
+      <img src="up.svg" alt="" id="imgFile" width="220px" />
+      <textarea name="" id="logs" cols="30" rows="10"></textarea>
+      <canvas id="canvas"></canvas>
+      
+    </div>
+  </body>
+</html>
+<script type="module" src="index.js"></script>
+
+
